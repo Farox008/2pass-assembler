@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Pass Assembler</title>
+</head>
+
+
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass1 Assembler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pass1 Assembler</h1>
+        
+        <!-- Input file upload section -->
+        <form id="assemblerForm" method="POST" enctype="multipart/form-data">
+            <!-- Upload input and optab files -->
+            <label for="inputFile">Upload Input File (input.txt):</label>
+            <input type="file" id="inputFile" name="inputFile" required><br><br>
+            
+            <label for="optabFile">Upload Opcode Table (optab.txt):</label>
+            <input type="file" id="optabFile" name="optabFile" required><br><br>
+            
+            <button type="submit">Run Pass1 Assembler</button>
+        </form>
+        
+
+        <div id="results">
+            <h2>Results</h2>
+            <div>
+                <h3>Intermediate File</h3>
+                <pre id="intermediateFile">Loading...</pre>
+            </div>
+            <div>
+                <h3>Symbol Table</h3>
+                <pre id="symbolTable">Loading...</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
